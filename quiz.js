@@ -28,7 +28,7 @@ function  question_submit() {
         
         
         var question_tag = "<h3>Q. " + add + " = " + "</h3>";
-        var input_tag = "<input class='form-control' id='answer' type='number' placeholder='Your Answer Here'>";
+        var input_tag = "<input class='form-control' id='answer' type='number' placeholder='Your Answer Here'><br><br>";
         var button_tag =  "<button class='btn btn-success' onclick='check_word()'>Check</button>";
         document.getElementById("question_output").innerHTML = question_tag + input_tag + button_tag;
     } else {
@@ -37,8 +37,8 @@ function  question_submit() {
         ans = num_1 - num_2;
         console.log(ans);
         var question_tag = "<h3>Q. " + add + " = " + "</h3>";
-        var input_tag = "<input class='form-control' id='answer' type='number' placeholder='Your Answer Here'><br><br>";
-        var button_tag =  "<br><br><button class='btn btn-success' onclick='check_word()' >Check</button>";
+        var input_tag = "<input class='form-control' id='answer' type='number' placeholder='Your Answer Here'>";
+        var button_tag =  "<button class='btn btn-success' onclick='check_word()' >Check</button>";
         document.getElementById("question_output").innerHTML = question_tag + input_tag + button_tag;
     }
     document.getElementById("number_1").value = 0;
