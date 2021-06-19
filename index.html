@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="main.js"></script>
+    <title>Project 89</title>
+    <style>
+        body {
+            background-image: url("login_background.jpg");
+            background-size: cover;
+            text-align: center;
+        }
+
+        .login_div {
+            width: 50%;
+            border-top: solid;
+            border-bottom: solid;
+            border-width: 7px;
+            border-color: red;
+            border-radius: 20px;
+            background-color: white;
+            padding: 20px;
+        }
+
+        h1 {
+            color: rgb(94, 56, 230);
+            font-weight: bolder;
+            font-size: 50px;
+        }
+
+        .login_bt {
+            width: 15%;
+            height: 10%;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <h1>Math Quiz Game</h1>
+    <center>
+        <br><br>
+        <div class="login_div">
+            <h3>Player 1 Login</h3>
+        <br>
+        <h5>User Name :</h5>
+        <input class="form-control" type="text" id="player_1_name" placeholder="Player 1 Username Here">
+        <br>
+        </div>
+        <br><br>
+
+        <div class="login_div">
+            <h3>Player 2 Login</h3>
+        <br>
+        <h5>User Name :</h5>
+        <input class="form-control" type="text" id="player_2_name" placeholder="Player 2 Username Here">
+        <br>
+        </div>
+        <br><br>
+        <button onclick="login_players()" type="button" class="btn btn-success login_bt">Login</button>
+    </center>
+</body>
+</html>

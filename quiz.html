@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+ 
+    <title>Project 89</title>
+    <style>
+        body {
+            background-image: url("quiz_background.jpg");
+        }
+
+        .score_board {
+            margin-left: 2%;
+            font-size: 20px;
+            color: aqua;
+            font-weight: 700;
+        }
+
+        .login_bt {
+            width: 15%;
+            height: 10%;
+            font-size: large;
+            border-radius: 10px;
+        }
+
+        #question_output {
+            width: 50%;
+            border-top: solid;
+            border-width: 7px;
+            border-color: red;
+            border-radius: 20px;
+            background-color: white;
+            padding: 20px;
+        }
+
+        .number_input {
+            width: 50%;
+            margin: 50px;
+        }
+
+        .score_board1 {
+            margin-left: 2%;
+            font-size: 35px;
+            color: aqua;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <h3 id="score_p1" class="score_board"></h3>
+    <h3 id="score_p2" class="score_board"></h3>
+    <br><br>
+    <center>
+        <h2 id="q_turn" class="score_board1"></h2>
+        <h2 id="a_turn" class="score_board1"></h2>
+        <br>
+        <div id="question_output">
+
+        </div>
+        <br>
+        <input id="number_1" type="number" placeholder="Type Number 1 Here" class="form-control number_input">
+        <input id="number_2" type="number" placeholder="Type Number 2 Here" class="form-control number_input">
+
+        <button type="submit" onclick="question_submit()" class="btn btn-success login_bt">Submit</button>
+    </center>
+    <script src="quiz.js"></script>
+</body>
+</html>
